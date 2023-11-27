@@ -18,5 +18,6 @@ python -m unittest tests/test_app.py
 Todo:
 -> create a home api that fetches random images from mongo with pagination and session id
 
+
 Resources:
 https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/
