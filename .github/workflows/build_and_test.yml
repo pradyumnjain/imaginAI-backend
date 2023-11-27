@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Build Docker image
-      run: docker build -t imaginAI-backend:latest .
+      run: docker build -t imaginai-backend:latest .
 
   run-and-test:
     runs-on: ubuntu-latest
