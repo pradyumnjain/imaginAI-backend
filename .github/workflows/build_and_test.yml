@@ -1,4 +1,4 @@
-name: Build and Test
+name: Build, Run, and Test Docker Image
 
 on:
   push:
@@ -7,15 +7,27 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag imaginAI-backend:$(date +%s)
-  
-    - name: Run Tests
-      run: |
-        python -m unittest tests/test_app.py
+
+    - name: Build Docker image
+      run: docker build -t imaginAI-backend:latest .
+
+  run-and-test:
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run Docker container and run tests
+      run: docker run imaginAI-backend:latest python -m unittest tests/test_app.py
+
+    - name: Cleanup (optional)
+      run: docker rmi imaginAI-backend:latest
