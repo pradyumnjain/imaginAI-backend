@@ -19,6 +19,3 @@ jobs:
 
     - name: Run Docker container and run tests
       run: docker run imaginai-backend:latest python -m unittest tests/test_app.py
-
-    - name: Cleanup (optional)
-      run: docker rmi imaginai-backend:latest
