@@ -8,7 +8,8 @@ The official Python image is based on a lightweight Linux distribution (Debian),
 ``````
 
 ```bash
-docker run -p 4000:5000 -v $(pwd):/app my-flask-api-dev
+docker build -t imaginai-backend:latest -f Dockerfile.dev .
+docker run -p 4000:5000 -v $(pwd):/app imaginai-backend:latest
 ```
 
 ```bash
