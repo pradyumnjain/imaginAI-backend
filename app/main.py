@@ -10,6 +10,11 @@ def hello():
     return "Hello, kanika from github !!!"
 
 
+@app.route("/health", methods=["GET"])
+def get_health():
+    return jsonify({"status": "200"})
+
+
 @app.route("/api/data", methods=["GET"])
 def get_data():
     return jsonify({"message": "GET request successful"})
