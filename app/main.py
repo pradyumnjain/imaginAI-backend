@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, world !!!"
+    return "Hello, from github !!!"
 
 
 @app.route("/api/data", methods=["GET"])
