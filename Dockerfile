@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE $PORT
 
 # Run the Flask application
-CMD ["gunicorn", "--workers=4", "--bind", "0.0.0.0:$PORT", "app.main:app"]
+CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app.main:app

@@ -18,6 +18,7 @@ python -m unittest tests/test_app.py
 
 ## Resources:
 1. https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/
+2. https://github.com/krishnaik06/bostonhousepricing
 
 
 ## Frequently asked questions
