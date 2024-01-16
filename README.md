@@ -26,4 +26,4 @@ python -m unittest tests/test_app.py
 - The official Python image is based on a lightweight Linux distribution (Debian), and it already includes Python and pip. This means you can use it to set up a Python environment for your Flask application without the need for additional manual installations.
 
 ## Todo:
-1. create a home api that fetches random images from mongo with pagination and session id
+1. create a home api that fetches random images from mongo with pagination and session id.
