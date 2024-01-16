@@ -1,4 +1,5 @@
 Flask
 requests
 flask-cors
-gunicon
+gunicorn==20.1.0
+
