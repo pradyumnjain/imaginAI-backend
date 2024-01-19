@@ -17,8 +17,9 @@ python -m unittest tests/test_app.py
 
 
 ## Resources:
-1. https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/
-2. https://github.com/krishnaik06/bostonhousepricing
+1. ECB - https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/
+2. Heroku - https://github.com/krishnaik06/bostonhousepricing
+3. Github Action - https://leonardqmarcq.com/posts/github-actions-cicd-elastic-beanstalk
 
 
 ## Frequently asked questions
