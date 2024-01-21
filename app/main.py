@@ -29,8 +29,8 @@ def get_data():
     COLLECTION = DATABASE["stock_data"]
 
     # GET CURSOR AND SIZE FROM REQUEST
-    cursor = request.form.get("cursor", type=int)
-    size = request.form.get("size", type=int)
+    cursor = request.args.get("cursor", type=int)
+    size = request.args.get("size", type=int)
 
     if COLLECTION is None:
         return {"url_list": [], "next_cursor": 0}
